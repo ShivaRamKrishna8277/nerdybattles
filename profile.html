@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerdy Battles - Best Place to Learn and Earn</title>
+    <link rel="icon" href="assets/images/icon.png" type="png">
+    <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="profile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6b08050b6d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div id="walletModalBody" class="modal-body d-flex justify-content-center align-items-center flex-column">
+                <img src="assets/images/successIcon.svg" alt="" width="80">
+                <h4 class="roFont mt-3 text-center" style="color: #16BC03;">Withdraw Request of ₹<span id="withdrawAmount"></span> Submitted successfully</h4>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <header id="loadheader" class="position-sticky top-0 z-3">
+        <div class="secClr_bg">
+            <section class="container-fluid d-flex justify-content-between align-items-center p5x py-2">
+                <div class="row">
+                    <div class="col" id="nav-brand">
+                        <section>
+                            <a href="#" class="text-decoration-none d-flex align-items-center">
+                                <img src="assets/images/LOGO.svg" alt="" style="height: 40px; width: auto;">
+                                <h1 class="roFont m-0 ms-2 fs-4" style="color: #FB8933;">Nerdy <span style="color: #8FFF00;" class="roFont">Battles</span></h1>
+                            </a>
+                        </section>
+                    </div>
+                </div>
+                <div class="row navLinks">
+                    <div class="col d-none d-lg-block">
+                        <ul class="d-flex gap-5 m-0">
+                            <li class="navLink"><a href="about.html">About Us</a></li>
+                            <li class="navLink"><a href="battles.html">Battles</a></li>
+                        </ul>
+                    </div>
+                    <div class="col d-block d-lg-none">
+                        <button class="btn" id="openMenu" onclick="openMenu()"><img src="assets/images/hamMenuIcon.svg" alt="" height="20"></button>
+                        <div class="mobileMenuWrapper position-absolute w-100 start-0 top-0 d-flex justify-content-between align-items-start bg-black z-3 p-5">
+                            <ul class="m-0 p-0 vh-100">
+                                <li class="mobileMenuLinks"><a href="about.html">About Us</a></li>
+                                <li class="mobileMenuLinks"><a href="battles.html">Battles</a></li>
+                            </ul>
+                        <button class="btn" id="closeMenu" onclick="closeMenu()"><img src="assets/images/close_menu.svg" alt="" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div id="profileContainer">
+            <div class="container-fluid p-0 py-5">
+                <div class="row g-0 p5x justify-content-between row-gap-4">
+
+                    <div class="col-lg-5 secClr_bg py-3 rounded-3 text-white">
+                        <section id="profileHeaderLeft" class="row g-0 justify-content-evenly">
+                            <section id="pphoto" class="col-4">
+                                <img src="assets/images/profilePhoto.png" alt="" class="img w-100 h-100 object-fit-cover rounded-3">
+                            </section>
+                            <div id="folfol" class="col-7 g-0">
+                                <ul class="h-100 m-0 p-0">
+                                    <li id="followers" class="folfolnum py-3">
+                                        <div>
+                                            <h4>1589</h4>
+                                            <h6>Followers</h6>
+                                        </div>
+                                    </li>
+                                    <li id="following" class="folfolnum py-3">
+                                        <div>
+                                            <h4>976</h4>
+                                            <h6>Following</h6>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section id="name" class="px-3 pt-3">
+                            <span class="h3 d-block">Shivaram Krishna</span>
+                            <span class="h6 opacity-50 m-0 fw-light">@walker_8277</span>
+                        </section>
+                    </div>
+
+                    <div class="col-lg-6 secClr_bg py-4 rounded-3 text-white px-lg-5 px-4">
+                        <div class="row g-0 d-flex align-items-center justify-content-between mb-4">
+                            <div class="col-sm-4 mb-5 mb-sm-0">
+                                <div id="scoreCircle">
+                                    <div class="outerProgress mx-auto mx-sm-0">
+                                        <div class="innerProgress">
+                                            <h4 id="battleScore">732</h4>
+                                            <p id="battleScoreText">Battle Score</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-7">
+                                <div class="stats">
+                                    <ul class="m-0 statsList p-0">
+                                        <li><span>Total Battles:</span><span>86</span></li>
+                                        <li><span>Battles Won:</span><span>52</span></li>
+                                        <li><span>Points Earned:</span><span>1,485</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0" id="winperContainer">
+                            <div class="progressLabels d-flex justify-content-between align-items-center mb-1">
+                                <span class="progressTitle">Winning Percentage:</span>
+                                <span class="progressPercentage">56%</span>
+                            </div>
+                            <div class="progressOuter">
+                                <div class="porgressInner" style="width: 56%;"></div>
+                            </div>
+                        </div>
+                        <div class="row g-0 mt-3" id="accuracyContainer">
+                            <div class="progressLabels d-flex justify-content-between align-items-center mb-1">
+                                <span class="progressTitle">Accuracy:</span>
+                                <span class="progressPercentage">81%</span>
+                            </div>
+                            <div class="progressOuter">
+                                <div class="porgressInner" style="width: 81%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="profileNav" class="row p5x g-0 my-5 pb-lg-0 pb-3 text-white overflow-x-auto">
+                    <div class="col">
+                        <ul id="toggleLinksWrapper" class="m-0 p-0 d-flex align-items-center">
+                            <li id="showPersonalInfo" class="toggleLinks" style="color: #8fff00;">Personal Info</li>
+                            <li id="showRecentSub" class="toggleLinks">Recent Submissions</li>
+                            <li id="showWallet" class="toggleLinks">Wallet</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row m5x g-0 rounded-3 overflow-hidden">
+
+                    <div id="personalInfoWrapper" class="contentWrappers col p-4 secClr_bg text-white">
+                        <div class="row g-0">
+                            <div class="col">
+                                <span class="personalinfoTitle roFont opacity-75 fs-5">Personal Information</span>
+                                <div class="row gx-5 gy-4 mt-1">
+                                    <div class="col-md-6">
+                                        <span class="infoField">Shivaram Krishna</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="infoField">@walker_8277</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="infoField">Paulwalker8277@gmail.com</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="infoField">9380248374</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="infoField">Male</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 mt-5">
+                            <div class="col">
+                                <span class="personalinfoTitle roFont opacity-75 fs-5">Bank Details</span>
+                                <div class="row gx-5 gy-4 mt-1">
+                                    <div class="col-md-6">
+                                        <span class="infoField">State Bank of India</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="infoField">12345678998</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="infoField">SBIN0040452</span>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span class="infoField">Shaktinagar</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 mt-5">
+                            <button class="btn prClr_bg text-black rounded-1" id="editDetailsBtn">Edit Details</button>
+                        </div>
+                    </div>
+
+                    <div id="recentSubmissionWrapper" class="contentWrappers col secClr_bg text-white tableScrollbar overflow-auto" style="max-height: 50vh;">
+                        <table id="recentSubTable" class="text-center w-100">
+                            <thead>
+                                <tr>
+                                    <th>Battle ID</th>
+                                    <th>Status</th>
+                                    <th>Date</th>
+                                    <th>Points</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>89652</td>
+                                    <td class="pending">Pending</td>
+                                    <td>12 - 10 - 2023</td>
+                                    <td>98.5</td>
+                                </tr>
+                                <tr>
+                                    <td>89488</td>
+                                    <td class="rejected">Rejected</td>
+                                    <td>12 - 10 - 2023</td>
+                                    <td>90.5</td>
+                                </tr>
+                                <tr>
+                                    <td>54645</td>
+                                    <td class="rejected">Rejected</td>
+                                    <td>11 - 10 - 2023</td>
+                                    <td>86.8</td>
+                                </tr>
+                                <tr>
+                                    <td>49845</td>
+                                    <td class="approved">Approved</td>
+                                    <td>09 - 10 - 2023</td>
+                                    <td>81.4</td>
+                                </tr>
+                                <tr>
+                                    <td>49849</td>
+                                    <td class="approved">Approved</td>
+                                    <td>05 - 10 - 2023</td>
+                                    <td>80.5</td>
+                                </tr>
+                                <tr>
+                                    <td>84924</td>
+                                    <td class="rejected">Rejected</td>
+                                    <td>05 - 10 - 2023</td>
+                                    <td>79.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div id="walletWrapper" class="contentWrappers col secClr_bg text-white">
+                        <div class="row g-0 p5x py-5 justify-content-between">
+                            <div class="col-lg-5 mb-lg-0 mb-5">
+                                <div id="rupeeContainer" class="walletContainers mb-4">
+                                    <div class="rupeeImg imgContainer">
+                                        <img src="assets/images/rupeeImg.svg" alt="">
+                                    </div>
+                                    <div class="rupeeBalance">
+                                        <span class="h6 opacity-50 d-block m-0">Rupees</span>
+                                        <span class="h3" id="availableBal">15,896.52</span>
+                                    </div>
+                                </div>
+                                <div id="withdrawWrapper">
+                                    <span class="h5 opacity-50 d-inline-block mb-3">Withdraw</span>
+                                    <div id="withdrawForm" class="walletForms">
+                                        <input type="number" placeholder="Enter Amount" id="inputBal"><br>
+                                        <input type="text" value="State Bank of India(****101)" class="inputonly" readonly><br>
+                                        <input type="submit" value="Withdraw" id="submitWithdraw" class="submitBtns">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-5 mb-lg-0 mb-5">
+                                <div id="rupeeContainer" class="walletContainers mb-4">
+                                    <div class="bCoinImg imgContainer">
+                                        <img src="assets/images/battleCoinImg.svg" alt="">
+                                    </div>
+                                    <div class="bCoinBalance">
+                                        <span class="h6 opacity-50 d-block m-0">B-Coins</span>
+                                        <span class="h3">895</span>
+                                    </div>
+                                </div>
+                                <div id="bCoinWrapper">
+                                    <span class="h5 opacity-50 d-inline-block mb-3">Buy B-Coins</span>
+                                    <div id="bCoinForm" class="walletForms">
+                                        <input type="number" id="totalbCoin" placeholder="Enter Number of Coins"><br>
+                                        <input type="number" placeholder="0.00 (INR)" id="bCoinCost" class="inputonly" readonly><br>
+                                        <input type="submit" value="Place Order" id="submitBCoin" class="submitBtns">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row g-0 p5x pb-5">
+                            <div class="col overflow-x-auto tableScrollbar">
+                                <span class="px-5 py-3 d-inline-block" id="rtHeading">Recent Transactions</span>
+                                <table id="recentTransactionTable" class="text-center w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Date</th>
+                                            <th>Product Type</th>
+                                            <th>Type</th>
+                                            <th>Size</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>12 - 10 - 2023</td>
+                                            <td>Cash</td>
+                                            <td>Withdraw</td>
+                                            <td>₹800</td>
+                                            <td class="pending">Pending</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12 - 10 - 2023</td>
+                                            <td>Coin</td>
+                                            <td>Load</td>
+                                            <td>59</td>
+                                            <td class="approved">Success</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11 - 10 - 2023</td>
+                                            <td>Cash</td>
+                                            <td>Withdraw</td>
+                                            <td>₹3000</td>
+                                            <td class="approved">Success</td>
+                                        </tr>
+                                        <tr>
+                                            <td>09 - 10 - 2023</td>
+                                            <td>Coin</td>
+                                            <td>Load</td>
+                                            <td>81</td>
+                                            <td class="rejected">Failed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05 - 10 - 2023</td>
+                                            <td>Cash</td>
+                                            <td>Withdraw</td>
+                                            <td>₹300</td>
+                                            <td class="rejected">Failed</td>
+                                        </tr>
+                                        <tr>
+                                            <td>05 - 10 - 2023</td>
+                                            <td>Cash</td>
+                                            <td>Withdraw</td>
+                                            <td>₹4000</td>
+                                            <td class="approved">Success</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+
+    </footer>
+
+    <script src="toggleMenu.js"></script>
+    <script src="loader.js"></script>
+    <script src="profile.js"></script>
+    <script src="profileInfoToggle.js"></script>
+    <script>
+        loadFileIntoDiv("footer.html","footer")
+    </script>
+</body>
+</html>

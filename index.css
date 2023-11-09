@@ -1,0 +1,44 @@
+/*nav*/
+.staticNav{
+    z-index: 1;
+    background: #000 !important;
+    box-shadow: 0 0 5px 10px #000000;
+}
+
+/*hero section*/
+#heroSection{
+    background-image: url(assets/images/indexH.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+}
+#hText{
+    font-size: 4rem;
+    line-height: 6rem;
+    background: linear-gradient(to bottom, #ffd900 10%, #FB8933 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    flex-wrap: wrap;
+    text-shadow: -10px 10px 4px #fb8a337c;
+}
+@media(min-width: 992px){
+    #hText{
+        font-size: 6rem;
+        line-height: 8rem;
+    }
+}
+
+/*types*/
+.typeTitle{
+    font-family: var(--roFont);
+}
+
+/*explore*/
+.card-title{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%;
+}

@@ -1,0 +1,140 @@
+@media(min-width:992px){
+    .borderEnd{
+        border-right: 1px solid rgb(255, 255, 255, 0.3);
+    }
+    #enrollBtn{
+        margin-left: 1.3rem;
+    }
+}
+.borderMiddle{
+    border-right: 1px solid rgb(255, 255, 255, 0.3);
+}
+
+#toggleLinksWrapper{
+    min-width: 800px;
+}
+#battleNav::-webkit-scrollbar{
+    height: 1px;
+    width: 1px;
+}
+#battleNav::-webkit-scrollbar-thumb{
+    width: 1px;
+    height: 1px;
+}
+#battleNav::-webkit-scrollbar-track{
+    background: transparent;
+}
+.toggleLinks{
+    color: #fff;
+    width: calc(100%/5);
+    cursor: pointer;
+}
+.toggleLinks:first-child{
+    color: #8FFF00;
+}
+
+
+
+/*description*/
+#leaderboard,#prizepool,#tasks,#submit{
+    display: none;
+}
+.contentWrappers{
+    margin-bottom: 2rem;
+}
+.descTitle{
+    display: inline-block;
+    font-family: 'Russo One',sans-serif;
+    padding-bottom: 1rem !important;
+}
+.descContent{
+    opacity: 0.5;
+}
+.descList li{
+    list-style-type: disc;
+    margin-bottom: 20px;
+}
+
+
+/*leaderboard-prizepool*/
+.leaderboard-Wrapper,.prizepool-Wrapper{
+    max-height: 70vh !important;
+}
+#leaderboardTable{
+    min-width: 500px;
+    width: 100%;
+}
+#leaderboardTable thead tr,#prizepoolTable thead tr{
+    position: sticky;
+    top: 0;
+    background: #212529;
+}
+#leaderboardTable thead tr th,#prizepoolTable thead tr th{
+    opacity: 0.5;
+    font-weight: 400;
+    height: 80px;
+}
+#leaderboardTable tbody tr td,#prizepoolTable tbody tr td{
+    height: 80px;
+    text-align: middle;
+    border-top: 1px solid rgb(255, 255, 255, 0.03);
+}
+#prizepoolTable tbody tr td:nth-child(2){
+    color: var(--priClr);
+}
+
+.prizepool-Wrapper{
+    background: url(assets/images/prizepoolbg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 300px;
+}
+
+
+/*Taks*/
+.accordion-item{
+    border: none !important;
+    background: #212529 !important;
+    color: #fff !important;
+    border-bottom: 1px solid rgb(255,255,255,0.05) !important;
+    padding: 20px 0;
+}
+.accordion-button{
+    background: #212529 !important;
+    box-shadow: none !important;
+    color: white !important;
+    font-size: 1.2rem !important;
+}
+.accordion-body p{
+    opacity: 0.5 !important;
+}
+.accordion-button::after{
+    background-image: url(assets/images/accordionBtn.png) !important;
+}
+.accordion-button span{
+    max-width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/*submit*/
+.uploadWrapper{
+    border: 2px dashed rgb(107, 107, 107);
+    border-radius: 10px;
+    padding: 40px 0;
+    background: rgba(56, 65, 75, 0.369)
+}
+#t1Solution{
+    display: none;
+}
+.inputBtn{
+    padding: 5px 20px;
+    margin: 10px 0;
+    background: #8FFF00;
+    color: #000;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}

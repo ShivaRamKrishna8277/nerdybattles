@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerdy Battles - Best Place to Learn and Earn</title>
+    <link rel="icon" href="assets/images/icon.png" type="png">
+    <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6b08050b6d.js" crossorigin="anonymous"></script>
+    <script src="indexBattles.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <header id="navbar" class="navBar position-fixed w-100">
+        <div>
+            <section class="container-fluid d-flex justify-content-between align-items-center p5x py-4">
+                <div class="row">
+                    <div class="col" id="nav-brand"></div>
+                </div>
+                <div class="row navLinks">
+                    <div class="col d-none d-lg-block">
+                        <ul class="d-flex gap-5 m-0">
+                            <li class="navLink"><a href="battles.html">Battles</a></li>
+                            <li class="navLink"><a href="about.html">About Us</a></li>
+                            <li class="navLink"><a href="login.html">Login</a></li>
+                        </ul>
+                    </div>
+                    <div class="col d-block d-lg-none">
+                        <button class="btn" id="openMenu" onclick="openMenu()"><img src="assets/images/hamMenuIcon.svg" alt="" height="20"></button>
+                        <div class="mobileMenuWrapper position-absolute w-100 start-0 top-0 d-flex justify-content-between align-items-start bg-black z-3 p-5">
+                            <ul class="m-0 p-0 vh-100">
+                                <li class="mobileMenuLinks"><a href="battles.html">Battles</a></li>
+                                <li class="mobileMenuLinks"><a href="about.html">About Us</a></li>
+                                <li class="mobileMenuLinks"><a href="login.html">Login</a></li>
+                            </ul>
+                        <button class="btn" id="closeMenu" onclick="closeMenu()"><img src="assets/images/close_menu.svg" alt="" height="20"></button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <main>
+        <div id="heroSection" class="d-flex justify-content-center p5x">
+            <div id="hTextWrapper" class="m-auto">
+                <h1 id="hText" class="roFont text-md-center ms-3" data-aos="fade-up">Compete. &lt;code&gt; <br> Win.</h1>
+            </div>
+        </div>
+        <div id="types" class="p5x">
+            <div class="container-fluid">
+                <div class="row g-0 justify-content-between flex-lg-row-reverse py-5">
+                    <div class="col-lg-3 col-12 mb-5 mb-lg-0">
+                        <img src="assets/images/battlesRef.png" alt="" class="img-fluid" data-aos="fade-up" data-aos-delay=400>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <ul class="m-0 p-0">
+                            <li data-aos="fade-up">
+                                <h1 class="typeTitle h1 text-white me-2">Battles &#9876;</h1>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay=200>
+                                <p class="typeDesc fw-medium text-white opacity-50 my-3">Step into the world of coding challenges! Our battles are dynamic and engaging coding competitions designed exclusively for students. In these epic coding face-offs, students have the opportunity to enroll and showcase their coding skills.</p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay= 300>
+                                <a href="battles.html" class="prClr text-decoration-none fw-medium fs-6">Explore</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-0 justify-content-between py-5">
+                    <div class="col-lg-3 col-12 mb-5 mb-lg-0">
+                        <img src="assets/images/singlebattlesRef.png" alt="" class="img-fluid" data-aos="fade-up" data-aos-delay=400>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <ul class="m-0 p-0">
+                            <li data-aos="fade-up">
+                                <h1 class="typeTitle h1 text-white me-2">Single Battles &#128100;</h1>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay=200>
+                                <p class="typeDesc fw-medium text-white opacity-50 my-3">In Single Battles, it's all about individual excellence.Participants will face off against each other individually, each striving to conquer the coding challenges and emerge victorious.Within the Single Battles, you'll be part of a group of like-minded individuals, all eager to prove their coding mettle. You'll compete on a challenge that tests your coding skills, problem-solving abilities, and creativity.</p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay= 300>
+                                <a href="battles.html" class="prClr text-decoration-none fw-medium fs-6">Explore</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row g-0 justify-content-between flex-lg-row-reverse py-5">
+                    <div class="col-lg-3 col-12 mb-5 mb-lg-0">
+                        <img src="assets/images/groupbattlesRef.png" alt="" class="img-fluid" data-aos="fade-up" data-aos-delay=400>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <ul class="m-0 p-0">
+                            <li data-aos="fade-up">
+                                <h1 class="typeTitle h1 text-white me-2">Group Battles &#128101;</h1>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay=200>
+                                <p class="typeDesc fw-medium text-white opacity-50 my-3">In our Group Battles, the camaraderie of coding takes center stage. Here, group entries are not only allowed but encouraged, with a maximum group size of 10 members. You and your teammates will face off against other groups, all competing on coding challenges. The ultimate reward? Prize money for the top-performing group, making it a collaborative and rewarding experience for all!</p>
+                            </li>
+                            <li data-aos="fade-up" data-aos-delay= 300>
+                                <a href="battles.html" class="prClr text-decoration-none fw-medium fs-6">Explore</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="features" class="p5x my-5">
+            <a href="battles.html" class="d-block text-center">
+                <img src="assets/images/featuresSlide.svg" alt="" class="img-fluid p-lg-0 p-0" data-aos="zoom-in" data-aos-duration="800">
+            </a>
+        </div>
+        <div id="expBattles" class="p5x py-5">
+            <div class="container-fluid">
+                <div class="row mb-5" data-aos="fade" data-aos-duration="8500">
+                    <span class="col h1 roFont text-white">Explore Battles :</span>
+                    <a href="" class="col prClr text-end fw-medium text-decoration-none">View All</a>
+                </div>
+                <div class="row g-5" id="ecpBattlesSlides">
+                  
+                </div>
+            </div>
+        </div>
+        <div id="htgs" class="p5x my-5">
+            <span class="h1 text-white roFont text-center d-block">How To Get Started?</span>
+            <div class="container-fluid">
+                <div class="row g-0 d-flex flex-column align-items-center gap-lg-5 gap-3 py-5">
+                    <img src="assets/images/htgs1.png" alt="" class="img-fluid" style="width: 95%; height: auto;" data-aos="fade-up">
+                    <img src="assets/images/htgsArrow.png" alt="" class="img-fluid" style="height: auto; width: 30px;" data-aos="fade" data-aos-delay="100">
+                    <img src="assets/images/htgs2.png" alt="" class="img-fluid" style="width: 95%; height: auto;" data-aos="fade-up">
+                    <img src="assets/images/htgsArrow.png" alt="" class="img-fluid" style="height: auto; width: 30px;" data-aos="fade" data-aos-delay="100">
+                    <img src="assets/images/htgs3.png" alt="" class="img-fluid" style="width: 95%; height: auto;" data-aos="fade-up">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="loader.js"></script>
+    <script src="toggleMenu.js"></script>
+    <script>
+        //navbar styling
+        window.addEventListener("scroll", () => {
+            if(window.scrollY > 150){
+                document.querySelector('.navBar').classList.add("staticNav");
+            }else {
+                document.querySelector('.navBar').classList.remove("staticNav");
+            }
+        })
+        
+        
+        document.addEventListener("DOMContentLoaded", () => {
+            // Nav_Logo Load
+            loadFileIntoDiv('nav-logo.html', 'nav-brand');
+            //Footer Load
+            loadFileIntoDiv('footer.html', 'footer');
+        });
+        AOS.init({
+            offset: 150,
+            duration: 500,
+            easing: 'linear',
+            once: false
+        });
+    </script>
+</body>
+</html>

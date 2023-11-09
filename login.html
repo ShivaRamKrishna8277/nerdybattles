@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nerdy Battles - Best Place to Learn and Earn</title>
+    <link rel="icon" href="assets/images/icon.png" type="png">
+    <link rel="stylesheet" href="res.css">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6b08050b6d.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="formWrapper">
+        <div class="container-fluid p-0 m-0">
+            <div class="row g-0 vh-100 w-100">
+                <div class="col-lg-6 d-lg-block d-none h-100">
+                    <img src="assets/images/loginBanner.svg" id="banner" alt="" class="img-fluid h-100 w-100 object-fit-cover">
+                </div>
+                <div class="col-lg-6 col-12 d-flex justify-content-center align-items-center flex-column gap-5">
+                    <div class="branding text-center">
+                        <img src="assets/images/logo.png" alt="" class="img" height="40">
+                        <span class="d-block roFont fs-4" style="color: #FB8933;">Nerdy <span class="prClr roFont">Battles</span></span>
+                    </div>
+                    <div class="switch secClr_bg text-white w-75">
+                        <div class="switchWrapper d-flex align-items-center justify-content-between">
+                            <h5 class="text-center w-50 py-2 loginBtn" id="loginBtn">Login</h5>
+                            <h5 class="text-center w-50 py-2 signupBtn" id="signupBtn">Signup</h5>
+                            <div id="switchBox"></div>
+                        </div>
+                    </div>
+                    <div class="w-75" id="loginWrapper">
+                        <section class="w-100 text-white text-center d-grid gap-4">
+                            <span class="h4 roFont d-block m-0">Welcome Back</span>
+                            <form action="profile.html" id="loginForm" class="forms">
+                                <div class="inputGroup d-flex align-items-center">
+                                    <div class="inputImg"><img src="assets/images/User.png" alt="" class="img" height="20"></div>
+                                    <input type="text" placeholder="Username">
+                                </div>
+                                <div class="inputGroup d-flex align-items-center">
+                                    <div class="inputImg"><img src="assets/images/password.png" alt="" class="img" height="20"></div>
+                                    <input type="password" placeholder="Password">
+                                </div>
+                                <input type="submit" value="Login" class="submitBtns">
+                            </form>
+                            <div class="otherLine">
+                                <hr class="m-0">
+                                <span id="otherText">Other</span>
+                            </div>
+                            <div class="otherOptions">
+                                <ul class="m-0 p-0 d-flex align-items-center justify-content-center gap-5">
+                                    <li><a href=""><img src="assets/images/googleIcon.svg" alt=""></a></li>
+                                    <li><a href=""><img src="assets/images/facebookLogin.svg" alt=""></a></li>
+                                    <li><a href=""><img src="assets/images/twitterLogin.svg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="w-75" id="signupWrapper">
+                        <section class="text-white w-100 text-center d-grid gap-4">
+                            <span class="h4 roFont d-block m-0">Create Account</span>
+                            <form action="profile.html" id="signupForm" class="forms">
+                                <div class="inputGroup d-flex align-items-center">
+                                    <div class="inputImg"><img src="assets/images/User.png" alt="" class="img" height="20"></div>
+                                    <input type="text" placeholder="Username">
+                                </div>
+                                <div class="inputGroup d-flex align-items-center">
+                                    <div class="inputImg"><img src="assets/images/mobile.png" alt="" class="img" height="20"></div>
+                                    <input type="text" placeholder="Mobile Number">
+                                </div>
+                                <div class="inputGroup d-flex align-items-center">
+                                    <div class="inputImg"><img src="assets/images/Email.png" alt="" class="img" height="20"></div>
+                                    <input type="email" placeholder="Email Address">
+                                </div>
+                                <div class="inputGroup d-flex align-items-center">
+                                    <div class="inputImg"><img src="assets/images/password.png" alt="" class="img" height="20"></div>
+                                    <input type="password" placeholder="Password">
+                                </div>
+                                <input type="submit" value="Signup" class="submitBtns">
+                            </form>
+                            <div class="otherLine">
+                                <hr class="m-0">
+                                <span id="otherText">Other</span>
+                            </div>
+                            <div class="otherOptions">
+                                <ul class="m-0 p-0 d-flex align-items-center justify-content-center gap-5">
+                                    <li><a href=""><img src="assets/images/googleIcon.svg" alt=""></a></li>
+                                    <li><a href=""><img src="assets/images/facebookLogin.svg" alt=""></a></li>
+                                    <li><a href=""><img src="assets/images/twitterLogin.svg" alt=""></a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js" defer></script>
+</body>
+</html>

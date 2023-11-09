@@ -1,0 +1,49 @@
+.borderBottom{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+
+.battlesTableContainer{
+    overflow-x: auto !important;
+}
+.battlesTableContainer .row{
+    min-width: 1000px;
+}
+.tableToggle{
+    color: #fff;
+    background: transparent;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 4px;
+}
+.activeTable{
+    background: #fff !important;
+    color: #000 !important;
+}
+.battleTable thead{
+    position: sticky !important;
+    top: 0;
+    background: #212529;
+}
+.battleTable tr th,.battleTable tr td{
+    color: white;
+    background: #212529;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 15px 24px;
+    vertical-align:middle;
+}
+.battleTable thead tr th{
+    opacity: 0.5;
+}
+.battleTitle{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+#singleBattleTableContainer,#groupBattleTableContainer{
+    height: fit-content;
+    max-height: 100vh !important;
+    overflow-y: auto;
+}

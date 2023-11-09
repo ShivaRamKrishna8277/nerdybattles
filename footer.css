@@ -1,0 +1,16 @@
+/*footer*/
+.footerNavLinks{
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+}
+.footerNavLinks:hover{
+    text-decoration: underline;
+}
+.fa-brands{
+    opacity: 0.5;
+}
+.fa-brands:hover{
+    color: var(--priClr) !important;
+    opacity: 1 !important;
+}

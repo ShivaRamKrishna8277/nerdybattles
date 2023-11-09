@@ -1,0 +1,203 @@
+#folfol ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.folfolnum{
+    width: 100%;
+    border-radius: 5px;
+    background: #2e3338;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45%;
+}
+.folfolnum div *{
+    text-align: center;
+    margin: 0 !important;
+}
+.folfolnum div h6{
+    opacity: 0.5;
+}
+
+.outerProgress{
+    height: 150px;
+    width: 150px;
+    background: conic-gradient(#8fff00 265deg,#2e3338 0deg);
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+}
+.innerProgress{
+    height: 130px;
+    width: 130px;
+    background: #212529;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#battleScore{
+    color: var(--priClr);
+    font-size: 1.8rem;
+    margin: 0;
+}
+#battleScoreText{
+    font-size: 0.9rem;
+    margin: 0;
+    opacity: 0.5;
+}
+.statsList li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    width: 100%;
+}
+.statsList li span:first-child{
+    opacity: 0.5;
+}
+.progressTitle{
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+.progressPercentage{
+    color: var(--priClr);
+    font-weight: 500;
+}
+.progressOuter{
+    background: #2e3338;
+    height: 7px;
+    width: 100%;
+    border-radius: 10px;
+}
+.porgressInner{
+    height: 100%;
+    background: var(--priClr);
+    border-radius: 10px;
+}
+
+
+
+/*Toggle bar*/
+#toggleLinksWrapper{
+    min-width: 700px;
+}
+#toggleLinksWrapper li{
+    width: calc(100%/3);
+    cursor: pointer;
+}
+#profileNav::-webkit-scrollbar{
+    height: 1px;
+    width: 1px;
+}
+#profileNav::-webkit-scrollbar-thumb{
+    width: 1px;
+    height: 1px;
+}
+#profileNav::-webkit-scrollbar-track{
+    background: transparent;
+}
+.infoField{
+    padding: 15px 20px;
+    background: #2e3338;
+    display: inline-block;
+    width: 100%;
+}
+@media(min-width:992px){
+    #editDetailsBtn{
+        width: 25%;
+    }
+}
+
+
+
+/*Recent Sub*/
+#recentSubmissionWrapper,#walletWrapper{
+    display: none;
+}
+#recentSubTable thead tr,#recentTransactionTable thead tr{
+    position: sticky;
+    top: 0;
+    background: #212529;
+    z-index: 1;
+}
+#recentSubTable thead tr th,#recentTransactionTable thead tr th{
+    opacity: 0.5;
+    font-weight: 500;
+
+}
+#recentSubTable thead tr,#recentSubTable tbody tr,#recentTransactionTable thead tr,#recentTransactionTable tbody tr{
+    height: 70px;
+}
+#recentSubTable tbody tr td,#recentTransactionTable tbody tr td{
+    border-top: 1px solid #ffffff09;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.rejected{
+    color: #ff4b4b;
+}
+.approved{
+    color: #16bc03;
+}
+.pending{
+    color: #FB9E36;
+}
+
+
+/*wallet*/
+.walletContainers{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2e3338;
+    border-radius: 10px;
+    padding: 20px 0;
+}
+.imgContainer img{
+    margin-right: 2rem;
+    width: 70px;
+}
+.walletForms input{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    outline: none;
+    background: #2e3338;
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.inputonly{
+    cursor: not-allowed;
+}
+.submitBtns{
+    background: var(--priClr) !important;
+    font-weight: 500;
+    color: black !important;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+#rtHeading{
+    border-radius: 20px 20px 0 0;
+    background: #2e3338;
+}
+#recentTransactionTable{
+    min-width: 800px;
+    background: #2e3338;
+    border-radius: 0 20px 20px 20px;
+    overflow: hidden;
+}
+#recentTransactionTable thead tr{
+    background: #2e3338 !important;
+}
+#recentTransactionTable tbody tr:nth-child(odd){
+    background: rgb(51, 57, 61) !important;
+}
